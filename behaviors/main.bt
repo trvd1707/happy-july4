@@ -1,0 +1,109 @@
+{
+    "1": {
+        "id": 1,
+        "class": "Sequence",
+        "name": "",
+        "asset-pack": "core",
+        "children": [
+            4,
+            6,
+            "da5d8d7e-644f-42a1-8f4d-104af743d2b8"
+        ],
+        "decorators": [],
+        "options": {}
+    },
+    "4": {
+        "id": 4,
+        "class": "PlayAnimation",
+        "name": "Play a greeting",
+        "asset-pack": "core",
+        "parent": 1,
+        "options": {
+            "animPath": "anim1.keys",
+            "config": [
+                "(animation) => {",
+                "}"
+            ]
+        }
+    },
+    "6": {
+        "id": 6,
+        "class": "Parallel",
+        "name": "",
+        "options": {
+            "succeedOnOne": true
+        },
+        "asset-pack": "core",
+        "parent": 1,
+        "children": [
+            "afe0b2f8-0a63-43dc-993c-44c46937993b",
+            "a7227add-32c2-49e3-8e15-069a49aee85d"
+        ]
+    },
+    "meta": {
+        "version": 1
+    },
+    "afe0b2f8-0a63-43dc-993c-44c46937993b": {
+        "id": "afe0b2f8-0a63-43dc-993c-44c46937993b",
+        "class": "PlayAudio",
+        "name": "",
+        "options": {
+            "audioPath": "usa_anthem.mp3",
+            "cache": true
+        },
+        "asset-pack": "core",
+        "parent": 6
+    },
+    "a7227add-32c2-49e3-8e15-069a49aee85d": {
+        "id": "a7227add-32c2-49e3-8e15-069a49aee85d",
+        "class": "PlayAnimation",
+        "name": "",
+        "options": {
+            "animPath": "anim2.keys",
+            "cache": true,
+            "upload": true,
+            "config": [
+                "(animation) => {",
+                "}"
+            ]
+        },
+        "asset-pack": "core",
+        "parent": 6,
+        "decorators": [
+            "fe3195f3-8729-4771-ad20-deca0ea0c108"
+        ]
+    },
+    "fe3195f3-8729-4771-ad20-deca0ea0c108": {
+        "id": "fe3195f3-8729-4771-ad20-deca0ea0c108",
+        "class": "WhileCondition",
+        "name": "",
+        "options": {
+            "init": [
+                "() => {",
+                "}"
+            ],
+            "conditional": [
+                "() => {",
+                "    return true;",
+                "}"
+            ]
+        },
+        "asset-pack": "core"
+    },
+    "da5d8d7e-644f-42a1-8f4d-104af743d2b8": {
+        "id": "da5d8d7e-644f-42a1-8f4d-104af743d2b8",
+        "class": "PlayAnimation",
+        "name": "",
+        "options": {
+            "animPath": "anim3.keys",
+            "cache": true,
+            "upload": true,
+            "config": [
+                "(animation) => {",
+                "}"
+            ]
+        },
+        "asset-pack": "core",
+        "parent": 1
+    }
+}
