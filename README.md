@@ -1,3 +1,5 @@
+See the accompanying [Animation JSON blog](https://developers.jibo.com/blog/animation-json)!
+
 [Jibo SDK & API Documentation](https://developers.jibo.com/sdk/docs/)
 
 To run this skill in the SDK:
